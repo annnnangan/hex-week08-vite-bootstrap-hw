@@ -16,10 +16,11 @@ $utilities: map-merge(
       ),
   )
 );
-
+@import "./utils/border.scss";
 @import "bootstrap/scss/utilities/api";
 @import "./base/base.scss";
 @import "./base/text.scss";
+@import "./components/button.scss";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
