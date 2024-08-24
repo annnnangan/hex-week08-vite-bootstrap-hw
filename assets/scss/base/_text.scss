@@ -1,0 +1,21 @@
+.title {
+  font-size: $font-size-base; //16px
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: $font-size-base * 0.875; //14px
+  font-weight: 600;
+}
+
+.body-text {
+  font-size: $font-size-base; //16px
+}
+
+.body-text-s {
+  font-size: $font-size-base * 0.875; //14px
+}
+
+.body-text-xs {
+  font-size: $font-size-base * 0.75; //12px
+}
