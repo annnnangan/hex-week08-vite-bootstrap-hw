@@ -17,10 +17,13 @@ $utilities: map-merge(
   )
 );
 @import "./utils/border.scss";
+@import "./utils/hover.scss";
 @import "bootstrap/scss/utilities/api";
 @import "./base/base.scss";
 @import "./base/text.scss";
 @import "./components/button.scss";
+@import "./components/badges.scss";
+@import "./components/image.scss";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";

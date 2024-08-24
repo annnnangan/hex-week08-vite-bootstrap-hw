@@ -1,3 +1,69 @@
 .top-banner {
-  height: calc(100vh - 20px);
+  .swiper-wrapper {
+    height: 400px;
+    // min-height: calc(100vh - 500px);
+    @include media-breakpoint-up(md) {
+      height: auto;
+    }
+  }
+
+  .banner-image {
+    width: 100%;
+    height: 400px;
+    // min-height: calc(100vh - 500px);
+    object-fit: cover;
+    @include media-breakpoint-up(md) {
+      height: auto;
+    }
+  }
+
+  .swiper-content {
+    overflow: hidden;
+  }
+
+  .course-highlight {
+    bottom: 0px;
+  }
+
+  .deco {
+    width: 30%;
+    top: -150px;
+    left: -100px;
+  }
+
+  .swiper-wrapper {
+    position: relative;
+  }
+
+  .swiper-button-banner-prev {
+    position: absolute;
+    top: 40%;
+    right: 90%;
+    z-index: 10;
+    box-shadow: 0px 10px 15px -3px #0000001a;
+  }
+
+  .swiper-button-banner-next {
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    z-index: 10;
+    box-shadow: 0px 10px 15px -3px #0000001a;
+  }
+
+  .swiper-slide-prev {
+    opacity: 0.35;
+  }
+
+  .swiper-slide-next {
+    opacity: 0.35;
+  }
+
+  .banner-cta {
+    bottom: -200px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 5%;
+    border-radius: 10px;
+  }
 }

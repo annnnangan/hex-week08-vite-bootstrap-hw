@@ -1,11 +1,7 @@
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 a {
   color: inherit;
   display: inline-block;
+  text-decoration: none;
 }
 
 h1,
@@ -15,9 +11,12 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
+  margin-bottom: 0;
+  width: fit-content;
 }
 
 p {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 0;
 }
