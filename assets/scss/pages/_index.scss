@@ -19,6 +19,10 @@
 
   .swiper-content {
     overflow: hidden;
+    border-radius: 0px;
+    @include media-breakpoint-up(md) {
+      border-radius: 80px;
+    }
   }
 
   .course-highlight {
@@ -26,9 +30,13 @@
   }
 
   .deco {
-    width: 30%;
-    top: -150px;
-    left: -100px;
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+      width: 40%;
+      top: -120px;
+      left: -100px;
+    }
   }
 
   .swiper-wrapper {

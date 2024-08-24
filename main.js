@@ -10,9 +10,9 @@ var bannerSwiper = new Swiper(".bannerSwiper", {
   rewind: true,
   loop: true,
   spaceBetween: 40,
-  autoplay: {
-    delay: 5000,
-  },
+  //   autoplay: {
+  //     delay: 5000,
+  //   },
   pagination: {
     el: ".swiper-blog-pagination",
     type: "fraction",
