@@ -46,12 +46,12 @@ $custom-colors: (
   "alert-120": $alert-120,
   "alert-20": $alert-20,
   "alert-10": $alert-10,
-  "$neutral-100": $neutral-100,
-  "$neutral-80": $neutral-80,
-  "$neutral-60": $neutral-60,
-  "$neutral-40": $neutral-40,
-  "$neutral-10": $neutral-10,
-  "$neutral-0": $neutral-0,
+  "neutral-100": $neutral-100,
+  "neutral-80": $neutral-80,
+  "neutral-60": $neutral-60,
+  "neutral-40": $neutral-40,
+  "neutral-10": $neutral-10,
+  "neutral-0": $neutral-0,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
