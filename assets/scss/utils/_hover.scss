@@ -13,3 +13,11 @@
     transition: 0.3s;
   }
 }
+
+.img-hover-darken {
+  transition: 0.3s;
+  &:hover {
+    filter: brightness(0.7);
+    transition: 0.3s;
+  }
+}
