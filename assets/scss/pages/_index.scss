@@ -87,6 +87,30 @@
 .more-course {
   background: linear-gradient(180deg, #f0f6ff 0%, #ffffff 100%);
 
+  .deco-1 {
+    left: -6%;
+    top: -20%;
+    @include media-breakpoint-up(md) {
+      left: 15%;
+      top: -25%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      left: 24%;
+      top: -25%;
+    }
+  }
+
+  .deco-2 {
+    width: 25%;
+    left: -13%;
+    top: 30%;
+  }
+
+  .section-title {
+    z-index: 2;
+  }
+
   .swiper-button-arrow-prev {
     position: absolute;
     top: 40%;
