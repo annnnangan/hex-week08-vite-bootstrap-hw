@@ -1,0 +1,75 @@
+<div class="col-md-6">
+  <div class="card position-relative h-100 slide-up-hover">
+    <a href="#" class="h-100 d-flex flex-column">
+      <!-- Badge -->
+      <div
+        class="badge py-2 px-3 mt-4 ms-4 text-primary bg-primary-10 subtitle position-absolute"
+      >
+        <%= course[0].badge %>
+      </div>
+      <!-- Course Cover -->
+      <img
+        src="../assets/images/<%= course[0].coverImage %>"
+        class="card-img-top w-100 img-hover-darken"
+        alt="course image"
+      />
+
+      <!-- Course Card Body -->
+      <div class="card-body py-6 px-4 d-flex flex-column flex-grow-1">
+        <!-- Course Name -->
+        <h6 class="card-title"><%= course[0].courseName %></h6>
+        <!-- Teacher Information -->
+        <div class="d-flex align-items-center mb-6 mt-auto">
+          <div class="flex-shrink-0">
+            <img
+              src="../assets/images/<%= course[0].teacherImage %>"
+              alt="avatar"
+              class="rounded-circle object-fit-cover"
+              width="35"
+              height="35"
+            />
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <p class="body-text text-neutral-80">
+              <%= course[0].teacherName %>
+            </p>
+          </div>
+        </div>
+        <!-- Card Body Bottom -->
+        <div class="mt-auto">
+          <!-- Course Fund Progress -->
+          <div class="mb-2">
+            <div class="d-flex justify-content-between mb-2">
+              <p class="title text-primary">
+                募資進度 <%= course[0].progress %> %
+              </p>
+              <p class="text-neutral-80 body-text-s">
+                已有 <%= course[0].studentAmount %> 位同學加入
+              </p>
+            </div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Basic example"
+              aria-valuenow="<%= course[0].progress %>"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar"
+                style="width: <%= course[0].progress %>%"
+              ></div>
+            </div>
+          </div>
+          <!-- Course Price -->
+          <div class="d-flex align-items-center">
+            <h6 class="me-2">NT$ <%= course[0].discountPrice %></h6>
+            <p class="text-neutral-60 body-text-s">
+              <del>NT$ <%= course[0].originalPrice %></del>
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

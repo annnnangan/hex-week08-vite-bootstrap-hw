@@ -14,8 +14,8 @@ var bannerSwiper = new Swiper(".bannerSwiper", {
     delay: 5000,
   },
   navigation: {
-    nextEl: ".swiper-button-banner-next",
-    prevEl: ".swiper-button-banner-prev",
+    nextEl: ".swiper-button-arrow-next",
+    prevEl: ".swiper-button-arrow-prev",
   },
   pagination: {
     el: ".swiper-pagination",
@@ -47,5 +47,32 @@ var courseCardSwiper = new Swiper(".courseCardSwiper", {
     el: ".swiper-pagination",
     type: "bullets",
     clickable: true,
+  },
+});
+
+var courseCardSwiper2 = new Swiper(".courseCardSwiper2", {
+  grabCursor: true,
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 24,
+  autoplay: {
+    delay: 5000,
+  },
+  navigation: {
+    nextEl: ".swiper-button-arrow-next",
+    prevEl: ".swiper-button-arrow-prev",
+  },
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+
+    1200: {
+      slidesPerView: 4,
+    },
   },
 });

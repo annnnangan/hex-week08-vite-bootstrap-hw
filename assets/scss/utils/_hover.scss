@@ -1,8 +1,8 @@
 .slide-up-hover {
-  transition: color 0.3s;
+  transition: transform 0.5s;
   &:hover {
-    transform: translate(0, -5px);
-    transition: color 0.3s;
+    transform: translate(0, -10px);
+    transition: transform 0.5s;
   }
 }
 
