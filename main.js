@@ -55,9 +55,9 @@ var courseCardSwiper2 = new Swiper(".courseCardSwiper2", {
   slidesPerView: 1,
   loop: true,
   spaceBetween: 24,
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
   navigation: {
     nextEl: ".swiper-button-arrow-next",
     prevEl: ".swiper-button-arrow-prev",

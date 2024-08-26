@@ -1,0 +1,23 @@
+<div class="col-md-6 col-10 category-item d-flex flex-column">
+  <a href="#" class="w-100 h-100">
+    <div class="p-5 rounded-5 bg-neutral-0 h-100">
+      <div class="d-flex align-items-center">
+        <img
+          src="../assets/images/icons/<%= category[0].icon %>.png"
+          alt="<%= category[0].icon %>"
+          class="p-4 rounded-4 me-5"
+          style="background-color: <%= category[0].color %>"
+        />
+        <div class="d-flex flex-column">
+          <p class="fw-semibold"><%= category[0].name %></p>
+
+          <% if(category[0].courseAmount) {%>
+          <p class="body-text-s text-neutral-60">
+            <%= category[0].courseAmount %> 門課程
+          </p>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

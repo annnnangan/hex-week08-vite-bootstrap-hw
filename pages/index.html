@@ -240,7 +240,7 @@
       />
       <div class="container py-md-15 py-13">
         <div class="row">
-          <div class="col-lg-4 mt-lg-16">
+          <div class="col-lg-4 mt-lg-17">
             <!-- Section Title -->
             <div class="d-flex flex-column align-items-start">
               <h2 class="fs-1 fw-semibold mb-2">火熱募資課程</h2>
@@ -382,18 +382,18 @@
           <div
             class="d-flex flex-column align-items-md-center align-items-start position-relative"
           >
-            <div class="section-title">
-              <!-- Mobile Section Title -->
-              <h2 class="fs-1 d-md-none mb-2">看看大家<br />都買了什麼</h2>
-              <!-- Desktop Section Title -->
-              <h2 class="fs-1 d-none d-md-block mb-2">看看大家都買了什麼</h2>
-            </div>
+            <!-- Mobile Section Title -->
 
-            <img
-              src="../assets/images/deco/flower-1.png"
-              class="position-absolute deco-1"
-              alt=""
-            />
+            <h2 class="fs-1 mb-2 title-deco d-md-none">
+              看看大家<br />都買了什麼
+            </h2>
+
+            <!-- Desktop Section Title -->
+
+            <h2 class="fs-1 mb-2 title-deco d-none d-md-block">
+              看看大家都買了什麼
+            </h2>
+
             <p class="body-text-s text-neutral-80">熱銷課程一次看！✨</p>
           </div>
         </div>
@@ -458,6 +458,71 @@
             >
               arrow_right_alt
             </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Category -->
+    <div class="course-category py-lg-15 py-md-12 py-9">
+      <div class="desktop-background mx-lg-auto">
+        <div class="container bg-primary py-13 ps-sm-4">
+          <div
+            class="row flex-row-reverse justify-content-between align-items-center"
+          >
+            <!-- section title -->
+            <div class="col-lg-5 mb-9 mb-lg-0 d-md-flex">
+              <img
+                src="../assets/images/deco/polygon-1.png"
+                alt="deco image"
+                class="deco-image"
+                width="80"
+                height="80"
+              />
+
+              <div>
+                <h2 class="text-neutral-0">想學什麼嗎？ <br />一探究竟。</h2>
+                <img
+                  src="../assets/images/deco/line-2.png"
+                  alt=""
+                  class="deco-line"
+                />
+              </div>
+            </div>
+
+            <!-- card list -->
+            <div class="col-lg-6 category">
+              <div class="row flex-md-wrap g-md-4 mb-4 category">
+                <!-- Card 1 -->
+                <%- include('./layout/icon-card', {category:[{name:"網路行銷",
+                courseAmount:"342", color:"#FF994F", icon:"megaphoneSimple"}]})
+                -%>
+                <!-- Card 2 -->
+                <%- include('./layout/icon-card', {category:[{name:"拍攝剪輯",
+                courseAmount:"563", color:"#5E5E5E", icon:"camera"}]}) -%>
+                <!-- Card 3 -->
+                <%- include('./layout/icon-card', {category:[{name:"自我成長",
+                courseAmount:"490", color:"#FF9BAD",
+                icon:"chartBarHorizontal"}]}) -%>
+                <!-- Card 4 -->
+                <%- include('./layout/icon-card', {category:[{name:"藝術設計",
+                courseAmount:"563", color:"#564FFD", icon:"pencil"}]}) -%>
+              </div>
+              <div class="row flex-md-wrap g-md-4 category">
+                <!-- Card 5 -->
+                <%- include('./layout/icon-card', {category:[{name:"數據分析",
+                courseAmount:"563", color:"#54DFF2", icon:"bugDroid"}]}) -%>
+                <!-- Card 6 -->
+                <%- include('./layout/icon-card', {category:[{name:"投資理財",
+                courseAmount:"563", color:"#52E9BC", icon:"creditCard"}]}) -%>
+                <!-- Card 7 -->
+                <%- include('./layout/icon-card', {category:[{name:"音樂創作",
+                courseAmount:"563", color:"#CF93FF", icon:"headphones"}]}) -%>
+                <!-- Card 8 -->
+                <%- include('./layout/icon-card', {category:[{name:"探索更多",
+                color:"#0068FF", icon:"arrow"}]}) -%>
+              </div>
+            </div>
           </div>
         </div>
       </div>

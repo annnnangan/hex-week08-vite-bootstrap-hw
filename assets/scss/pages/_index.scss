@@ -87,18 +87,25 @@
 .more-course {
   background: linear-gradient(180deg, #f0f6ff 0%, #ffffff 100%);
 
-  .deco-1 {
-    left: -6%;
-    top: -20%;
-    @include media-breakpoint-up(md) {
-      left: 15%;
-      top: -25%;
-    }
+  .title-deco {
+    position: relative;
+    z-index: 1;
 
-    @include media-breakpoint-up(lg) {
-      left: 24%;
-      top: -25%;
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      left: -30px;
+      top: -30px;
+      background-image: url(/assets/images/deco/flower-1.png);
+      width: 60px;
+      height: 60px;
     }
+  }
+
+  .deco-1 {
+    left: -5%;
+    top: -15%;
   }
 
   .deco-2 {
@@ -125,5 +132,36 @@
     right: -1%;
     z-index: 10;
     box-shadow: 0px 10px 15px -3px #0000001a;
+  }
+}
+
+.course-category {
+  .category {
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+  .category-item {
+    flex: 0 0 auto;
+  }
+
+  .desktop-background {
+    @include media-breakpoint-up(md) {
+      max-width: 1500px;
+      background-color: $primary;
+      border-radius: 80px;
+    }
+  }
+  .container {
+    border-radius: 40px;
+    @include media-breakpoint-up(md) {
+      border-radius: 80px;
+    }
+  }
+
+  .deco-line {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 60%;
+    }
   }
 }
