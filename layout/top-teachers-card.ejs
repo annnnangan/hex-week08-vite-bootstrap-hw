@@ -1,0 +1,36 @@
+<div class="teacher-slide h-100 d-flex flex-column">
+  <img
+    src="../assets/images/<%= teacher[0].image %>"
+    class="card-img-top object-fit-cover teacher-image"
+    alt="<%= teacher[0].image %>"
+  />
+
+  <div class="card p-6 card-shadow border-0 d-flex flex-column flex-grow-1">
+    <h5 class="card-title mb-6"><%= teacher[0].name %></h5>
+
+    <div class="d-flex mb-2">
+      <div class="badge py-2 px-3 bg-neutral-40 text-neutral-80 subtitle me-2">
+        <%= teacher[0].field %>
+      </div>
+      <div class="d-flex align-items-center">
+        <p class="fw-medium d-flex align-items-center me-1">
+          <span
+            class="material-symbols-outlined material-symbols-outlined-fill color-yellow body-text-xs me-1"
+          >
+            kid_star
+          </span>
+          <%= teacher[0].rating %>
+        </p>
+        <p class="text-neutral-60 fw-medium body-text-s">
+          (<%= teacher[0].ratingAmount %>)
+        </p>
+      </div>
+    </div>
+    <p class="card-text text-neutral-80 mb-6"><%= teacher[0].feedback%></p>
+    <div class="mt-auto">
+      <a href="#" class="btn btn-primary w-100"
+        >探索 <%= teacher[0].name %> 的教學課程</a
+      >
+    </div>
+  </div>
+</div>

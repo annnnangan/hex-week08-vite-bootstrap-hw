@@ -16,6 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
+
   <body>
     <div class="top-banner mb-md-12">
       <div class="swiper bannerSwiper">
@@ -329,7 +330,7 @@
           </div>
         </div>
         <!-- Mobile Course Card Swiper-->
-        <div class="swiper courseCardSwiper d-block d-md-none">
+        <div class="swiper mobileCardSwiper d-block d-md-none">
           <div class="swiper-wrapper mb-10 py-5">
             <div class="swiper-slide">
               <%- include('./layout/course-card-with-progress', {course:[{badge:
@@ -492,23 +493,25 @@
 
             <!-- card list -->
             <div class="col-lg-6 category">
-              <div class="row flex-md-wrap g-md-4 mb-4 category">
-                <!-- Card 1 -->
-                <%- include('./layout/icon-card', {category:[{name:"網路行銷",
-                courseAmount:"342", color:"#FF994F", icon:"megaphoneSimple"}]})
-                -%>
-                <!-- Card 2 -->
-                <%- include('./layout/icon-card', {category:[{name:"拍攝剪輯",
-                courseAmount:"563", color:"#5E5E5E", icon:"camera"}]}) -%>
-                <!-- Card 3 -->
-                <%- include('./layout/icon-card', {category:[{name:"自我成長",
-                courseAmount:"490", color:"#FF9BAD",
-                icon:"chartBarHorizontal"}]}) -%>
-                <!-- Card 4 -->
-                <%- include('./layout/icon-card', {category:[{name:"藝術設計",
-                courseAmount:"563", color:"#564FFD", icon:"pencil"}]}) -%>
+              <div class="">
+                <div class="row flex-md-wrap g-md-4 mb-4 category first-row">
+                  <!-- Card 1 -->
+                  <%- include('./layout/icon-card', {category:[{name:"網路行銷",
+                  courseAmount:"342", color:"#FF994F",
+                  icon:"megaphoneSimple"}]}) -%>
+                  <!-- Card 2 -->
+                  <%- include('./layout/icon-card', {category:[{name:"拍攝剪輯",
+                  courseAmount:"563", color:"#5E5E5E", icon:"camera"}]}) -%>
+                  <!-- Card 3 -->
+                  <%- include('./layout/icon-card', {category:[{name:"自我成長",
+                  courseAmount:"490", color:"#FF9BAD",
+                  icon:"chartBarHorizontal"}]}) -%>
+                  <!-- Card 4 -->
+                  <%- include('./layout/icon-card', {category:[{name:"藝術設計",
+                  courseAmount:"563", color:"#564FFD", icon:"pencil"}]}) -%>
+                </div>
               </div>
-              <div class="row flex-md-wrap g-md-4 category">
+              <div class="row flex-md-wrap g-md-4 category second-row">
                 <!-- Card 5 -->
                 <%- include('./layout/icon-card', {category:[{name:"數據分析",
                 courseAmount:"563", color:"#54DFF2", icon:"bugDroid"}]}) -%>
@@ -524,6 +527,57 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Teachers -->
+    <div class="top-teachers position-relative pt-md-15 pb-md-19 pt-13 pb-15">
+      <img
+        src="../assets/images/deco/line-1.png"
+        alt="line deco"
+        class="w-100 position-absolute deco d-none d-lg-block"
+      />
+
+      <div class="container">
+        <!-- section title -->
+        <div class="d-flex flex-column align-items-center mb-9">
+          <h2 class="fs-1 mb-2 title-deco">頂尖講師帶你飛</h2>
+
+          <p class="body-text-s text-neutral-80">
+            超真實學員評價，這些講師你絕對不能錯過！
+          </p>
+        </div>
+
+        <!-- Course Card Swiper-->
+        <div class="swiper mobileCardSwiper2">
+          <div class="swiper-wrapper mb-10 py-5">
+            <div class="swiper-slide">
+              <%-
+              include('./layout/top-teachers-card',{teacher:[{image:"teacher-3.png",
+              name:"Mr. Robert", field: "音樂創作", rating:"4.0",
+              ratingAmount:"333",
+              feedback:"Robert的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。"}]})
+              -%>
+            </div>
+            <div class="swiper-slide">
+              <%-
+              include('./layout/top-teachers-card',{teacher:[{image:"teacher-1.png",
+              name:"Kelly Beck", field: "英文寫作", rating:"4.8",
+              ratingAmount:"281",
+              feedback:"Kelly的教學方式靈活且富有創意，能夠有效提升學生的寫作技巧和自信心。Kelly注重實用性，針對學生的需求量身打造教學內容，並提供具體的反饋和建議。"}]})
+              -%>
+            </div>
+            <div class="swiper-slide">
+              <%-
+              include('./layout/top-teachers-card',{teacher:[{image:"teacher-2.png",
+              name:"K. Lee", field: "音樂創作", rating:"4.0",
+              ratingAmount:"333",
+              feedback:"K.Lee的教學風格親切且耐心，能夠循序漸進地引導學生進入樂團的世界。學生們紛紛表示，K.Lee的課程讓他們對音樂產生了濃厚的興趣！"}]})
+              -%>
+            </div>
+          </div>
+          <div class="swiper-pagination d-block d-lg-none"></div>
         </div>
       </div>
     </div>

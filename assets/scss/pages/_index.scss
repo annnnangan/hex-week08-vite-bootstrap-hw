@@ -84,24 +84,28 @@
   }
 }
 
+.deco {
+  z-index: -10;
+}
+
+.title-deco {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: -30px;
+    background-image: url(/assets/images/deco/flower-1.png);
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .more-course {
   background: linear-gradient(180deg, #f0f6ff 0%, #ffffff 100%);
-
-  .title-deco {
-    position: relative;
-    z-index: 1;
-
-    &::after {
-      z-index: -1;
-      position: absolute;
-      content: "";
-      left: -30px;
-      top: -30px;
-      background-image: url(/assets/images/deco/flower-1.png);
-      width: 60px;
-      height: 60px;
-    }
-  }
 
   .deco-1 {
     left: -5%;
@@ -138,7 +142,7 @@
 .course-category {
   .category {
     flex-wrap: nowrap;
-    overflow: auto;
+    overflow-x: auto;
   }
   .category-item {
     flex: 0 0 auto;
@@ -162,6 +166,32 @@
     width: 100%;
     @include media-breakpoint-up(md) {
       width: 60%;
+    }
+  }
+}
+
+.top-teachers {
+  .teacher-image {
+    width: 80%;
+    margin-left: 20%;
+    @include media-breakpoint-up(lg) {
+      width: 55%;
+      margin-left: 15%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 80%;
+    }
+  }
+
+  .teacher-slide .card {
+    margin-right: 15%;
+    margin-top: -15%;
+    width: 90%;
+    @include media-breakpoint-up(lg) {
+      width: 60%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 80%;
     }
   }
 }
