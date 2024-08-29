@@ -64,22 +64,12 @@ nav {
     border-left:0;
    }
   
-
   .dropdown-menu-wrapper{
   height:calc( 100vh - 200px);
   max-height: 700px;
   overflow-y: scroll;
   }
   
-  .dropdown-menu-level-one{
-    border-radius: 10px 0px 0px 10px;
-  }
-
-  .dropdown-menu-level-three{
-    border-radius: 0 10px 10px 0;
-    width:500px;
-  }
-
   .dropdown-menu-level-one,
   .dropdown-menu-level-two {
     
@@ -94,6 +84,18 @@ nav {
         font-weight: 600;
       }
     }
+  }
+
+  .dropdown-menu-level-one{
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .dropdown-menu-level-three{
+    width:500px;
+    &.dropdown-menu[data-bs-popper]{
+      border-radius: 0 10px 10px 0;
+    }
+   
   }
 }
 
