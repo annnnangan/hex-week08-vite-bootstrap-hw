@@ -1,4 +1,274 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<nav class="navbar navbar-expand-lg mt-9 mb-4">
+  <div class="container py-4 px-9 rounded-7 header-shadow">
+    <div class="d-flex align-items-center">
+      <!-- logo -->
+      <a class="navbar-brand mr-6" href="#">
+        <img src="../assets/images/logo.png" alt="Learning Logo" width="200" />
+      </a>
+
+      <!-- Dropdown menu -->
+      <div class="d-flex align-items-center me-auto">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle body-text px-6 border-0 bg-transparent"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-auto-close="outside"
+          >
+            探索
+          </button>
+
+          <div class="desktop-dropdown-menu position-relative">
+            <ul
+              class="dropdown-menu-level-one list-unstyled bg-neutral-10 mb-0 border-end border-neutral-40 dropdown-menu show border-0 py-0 dropend"
+            >
+              <li>
+                <a class="dropdown-item dropdown-item-all mb-2" href="#"
+                  >探索全部</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="#">音樂</a></li>
+              <li><a class="dropdown-item" href="#">攝影</a></li>
+              <li>
+                <!-- 程式第一層menu -->
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-auto-close="outside"
+                  >程式</a
+                >
+                <!-- 程式第二層menu -->
+                <ul
+                  class="dropdown-menu dropdown-menu-level-two list-unstyled border-end border-neutral-40 position-absolute"
+                >
+                  <li>
+                    <a class="dropdown-item dropdown-item-all" href="#"
+                      >所有程式</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">程式入門</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-bs-auto-close="outside"
+                      >網頁前端</a
+                    >
+                    <!-- 程式第三層menu -->
+                    <ul
+                      class="dropdown-menu dropdown-menu-level-three list-unstyled px-6"
+                    >
+                      <div
+                        class="d-flex align-items-center pb-4 mb-4 border-bottom"
+                      >
+                        <img
+                          src="../assets/images/icons/ic_fire.png"
+                          alt="fire icon"
+                          class="me-2"
+                          width="21"
+                          height="21"
+                        />
+                        <p class="subtitle">熱門網頁前端課程</p>
+                      </div>
+
+                      <%- include('./layout/course-card-horizontal',{courseName:
+                      "小白也會！從零開始學習 Python 程式設計" ,
+                      courseImage:"course-5.png",teacherImage:"avatar-2.png",
+                      teacherName:"Kelly Hsu", discountPrice:"2,480",
+                      originalPrice:"3,200", studentAmount:"420", rating:"4.0",
+                      ratingAmount:"333"}) -%> <%-
+                      include('./layout/course-card-horizontal',{courseName:
+                      "小白也會！從零開始學習 Python 程式設計" ,
+                      courseImage:"course-5.png",teacherImage:"avatar-2.png",
+                      teacherName:"Kelly Hsu", discountPrice:"2,480",
+                      originalPrice:"3,200", studentAmount:"420", rating:"4.0",
+                      ratingAmount:"333"}) -%> <%-
+                      include('./layout/course-card-horizontal',{courseName:
+                      "小白也會！從零開始學習 Python 程式設計" ,
+                      courseImage:"course-5.png",teacherImage:"avatar-2.png",
+                      teacherName:"Kelly Hsu", discountPrice:"2,480",
+                      originalPrice:"3,200", studentAmount:"420", rating:"4.0",
+                      ratingAmount:"333"}) -%>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">網頁後端</a></li>
+                  <li><a class="dropdown-item" href="#">網站架設</a></li>
+                  <li><a class="dropdown-item" href="#">資訊安全</a></li>
+                  <li><a class="dropdown-item" href="#">程式語言</a></li>
+                  <li><a class="dropdown-item" href="#">遊戲開發</a></li>
+                  <li><a class="dropdown-item" href="#">資料科學</a></li>
+                  <li><a class="dropdown-item" href="#">人工智慧</a></li>
+                  <li><a class="dropdown-item" href="#">量化分析</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="#">藝術</a></li>
+              <li><a class="dropdown-item" href="#">人文</a></li>
+              <li><a class="dropdown-item" href="#">攝影</a></li>
+              <li><a class="dropdown-item" href="#">行銷</a></li>
+              <li><a class="dropdown-item" href="#">投資理財</a></li>
+              <li><a class="dropdown-item" href="#">心靈成長</a></li>
+              <li><a class="dropdown-item" href="#">職場技能</a></li>
+              <li><a class="dropdown-item" href="#">生活品味</a></li>
+              <li><a class="dropdown-item" href="#">攝影</a></li>
+              <li><a class="dropdown-item" href="#">行銷</a></li>
+              <li><a class="dropdown-item" href="#">投資理財</a></li>
+              <li><a class="dropdown-item" href="#">心靈成長</a></li>
+              <li><a class="dropdown-item" href="#">生活品味</a></li>
+              <li><a class="dropdown-item" href="#">攝影</a></li>
+              <li><a class="dropdown-item" href="#">行銷</a></li>
+              <li><a class="dropdown-item" href="#">投資理財</a></li>
+              <li><a class="dropdown-item" href="#">心靈成長</a></li>
+            </ul>
+          </div>
+
+          <!-- <ul
+                class="dropdown-menu-level-two list-unstyled border-end border-neutral-40"
+              >
+                <li>
+                  <a class="dropdown-item dropdown-item-all" href="#"
+                    >所有程式</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">程式入門</a></li>
+                <li><a class="dropdown-item active" href="#">網頁前端</a></li>
+                <li><a class="dropdown-item" href="#">網頁後端</a></li>
+                <li><a class="dropdown-item" href="#">網站架設</a></li>
+                <li><a class="dropdown-item" href="#">資訊安全</a></li>
+                <li><a class="dropdown-item" href="#">程式語言</a></li>
+                <li><a class="dropdown-item" href="#">遊戲開發</a></li>
+                <li><a class="dropdown-item" href="#">資料科學</a></li>
+                <li><a class="dropdown-item" href="#">人工智慧</a></li>
+                <li><a class="dropdown-item" href="#">量化分析</a></li>
+              </ul>
+
+              <ul class="dropdown-menu-level-three list-unstyled px-6">
+                <div class="d-flex align-items-center pb-4 mb-4 border-bottom">
+                  <img
+                    src="../assets/images/icons/ic_fire.png"
+                    alt="fire icon"
+                    class="me-2"
+                    width="21"
+                    height="21"
+                  />
+                  <p class="subtitle">熱門網頁前端課程</p>
+                </div>
+
+                <%- include('./layout/course-card-horizontal',{courseName:
+                "小白也會！從零開始學習 Python 程式設計" ,
+                courseImage:"course-5.png",teacherImage:"avatar-2.png",
+                teacherName:"Kelly Hsu", discountPrice:"2,480",
+                originalPrice:"3,200", studentAmount:"420", rating:"4.0",
+                ratingAmount:"333"}) -%> <%-
+                include('./layout/course-card-horizontal',{courseName:
+                "小白也會！從零開始學習 Python 程式設計" ,
+                courseImage:"course-5.png",teacherImage:"avatar-2.png",
+                teacherName:"Kelly Hsu", discountPrice:"2,480",
+                originalPrice:"3,200", studentAmount:"420", rating:"4.0",
+                ratingAmount:"333"}) -%> <%-
+                include('./layout/course-card-horizontal',{courseName:
+                "小白也會！從零開始學習 Python 程式設計" ,
+                courseImage:"course-5.png",teacherImage:"avatar-2.png",
+                teacherName:"Kelly Hsu", discountPrice:"2,480",
+                originalPrice:"3,200", studentAmount:"420", rating:"4.0",
+                ratingAmount:"333"}) -%>
+              </ul> -->
+        </div>
+
+        <!-- Search form -->
+        <form
+          class="d-flex search-form align-items-center position-relative"
+          role="search"
+        >
+          <span class="material-symbols-outlined position-absolute search-icon">
+            search
+          </span>
+          <input
+            type="search"
+            class="form-control search"
+            placeholder="搜尋各種音樂、數學、程式及設計課程"
+            aria-label="Search"
+            aria-describedby="addon-wrapping"
+          />
+          <button
+            class="btn btn-primary py-3 px-4 position-absolute search-submit-button"
+            type="submit"
+          >
+            搜尋
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <div
+          style="width: 48px"
+          class="me-4 position-relative d-flex align-items-center"
+        >
+          <div class="material-symbols-outlined text-neutral-80">
+            notifications
+          </div>
+
+          <span
+            class="position-absolute top-0 start-50 translate-middle badge rounded-circle bg-primary p-1"
+            ><span class="visually-hidden">unread messages</span></span
+          >
+        </div>
+
+        <div
+          style="width: 48px"
+          class="me-4 position-relative d-flex align-items-center"
+        >
+          <div class="material-symbols-outlined text-neutral-80">
+            shopping_cart
+          </div>
+          <span
+            class="position-absolute top-0 start-50 translate-middle badge rounded-circle text-bg-primary body-text-xs d-flex justify-content-center border-white"
+            style="font-weight: 400; border: 2px solid; width: 25px"
+          >
+            2<span class="visually-hidden">unread messages</span></span
+          >
+        </div>
+
+        <a
+          href="login.html"
+          class="d-flex align-items-center btn btn-primary px-7 py-4 title"
+        >
+          登入 / 註冊
+        </a>
+      </div>
+    </div>
+
+    <!-- <button
+      class="navbar-toggler border-0 d-xl-none"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      <span class="navbar-toggler-icon icon-24"></span>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end w-100"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div> -->
+  </div>
+</nav>

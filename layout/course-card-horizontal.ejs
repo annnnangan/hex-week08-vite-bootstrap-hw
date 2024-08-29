@@ -1,0 +1,75 @@
+<div class="card mb-4 pb-6 border-0 border-bottom rounded-0">
+  <a href="#">
+    <div class="d-flex">
+      <div class="position-relative me-2 img-hover-enlarge">
+        <div
+          class="badge badge-top py-2 px-3 mt-1 ms-1 text-alert bg-alert-10 position-absolute top-0 start-0 body-text-s fw-normal rounded-7"
+        >
+          8折
+        </div>
+
+        <div class="img-wrapper rounded">
+          <img
+            src="../assets/images/<%= courseImage %>"
+            class="object-fit-cover img-hover-enlarge img-hover-darken"
+            alt="<%= courseName %>"
+            width="100"
+            height="100"
+          />
+        </div>
+      </div>
+      <div>
+        <div class="card-body p-0 mb-2">
+          <h6 class="card-title mb-4"><%= courseName %></h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center mt-auto">
+              <div class="flex-shrink-0">
+                <img
+                  src="../assets/images/<%= teacherImage %>"
+                  alt="avatar"
+                  class="rounded-circle object-fit-cover"
+                  width="35"
+                  height="35"
+                />
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <p class="body-text text-neutral-80"><%= teacherName %></p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-end">
+              <h6 class="text-primary">NT$ <%= discountPrice %></h6>
+              <p class="text-neutral-60 body-text-s">
+                <del>NT$ <%= originalPrice %></del>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer bg-neutral-0 p-0 py-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <p class="text-neutral-80 body-text-s">
+                已有 <%= studentAmount %>位同學加入
+              </p>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <p class="fw-medium d-flex align-items-center me-1">
+                <span
+                  class="material-symbols-outlined material-symbols-outlined-fill color-yellow body-text-xs me-1"
+                >
+                  kid_star
+                </span>
+                <%= rating %>
+              </p>
+              <p class="text-neutral-60 fw-medium body-text-s">
+                (<%= ratingAmount %>)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

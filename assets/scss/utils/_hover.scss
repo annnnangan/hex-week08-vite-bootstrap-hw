@@ -21,3 +21,14 @@
     transition: 0.3s;
   }
 }
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img-hover-enlarge {
+  transition: 0.3s;
+  &:hover img {
+    transform: scale(1.1);
+  }
+}

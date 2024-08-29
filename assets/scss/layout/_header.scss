@@ -1,4 +1,86 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header-shadow {
+  box-shadow: 0px 2px 40px 0px #0068ff1a;
+}
+
+nav {
+  .search-form {
+    .search {
+      padding-left: 40px;
+      width: 450px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .search-icon {
+      padding-left: 8px;
+    }
+
+    .search-submit-button {
+      right: 3%;
+    }
+
+    input::placeholder {
+      width: 400px;
+      color: $neutral-60;
+    }
+  }
+}
+
+nav {
+  .dropdown-menu-level-one,
+  .dropdown-menu-level-two,
+  .dropdown-menu-level-three {
+    .dropdown-item {
+      color: $neutral-80;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:not(.dropdown-item-all) {
+        &::after {
+          content: "\e5cc";
+          font-family: "Material Symbols Outlined";
+        }
+      }
+    }
+  }
+}
+
+.desktop-dropdown-menu {
+  .dropdown-menu-level-one,
+  .dropdown-menu-level-two,
+  .dropdown-menu-level-three {
+    height: calc(100vh - 200px);
+    max-height: 600px;
+    overflow-y: scroll;
+  }
+
+  .dropdown-menu-level-one,
+  .dropdown-menu-level-two {
+    .dropdown-item {
+      padding: 12px 12px 12px 24px;
+
+      &.active,
+      &:active {
+        border-radius: 12px;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .dropdown-menu-level-one {
+    width: 200px;
+  }
+
+  .dropdown-menu-level-two {
+    position: absolute;
+    right: 500px;
+    width: 200px;
+  }
+
+  .dropdown-menu-level-three {
+    position: absolute;
+    right: 600px;
+    width: 400px;
+  }
 }
