@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-lg mt-9 mb-4">
+<div class="overlay-cover"></div>
+<nav class="navbar navbar-expand-lg py-9 pb-4 position-relative">
+  
   <div class="container py-4 px-9 rounded-7 header-shadow">
     <div class="d-flex align-items-center">
       <!-- logo -->
@@ -10,7 +12,7 @@
       <div class="d-flex align-items-center me-auto">
         <div class="dropdown">
           <button
-            class="dropdown-toggle body-text px-6 border-0 bg-transparent"
+            class="dropdown-toggle body-text px-6 border-0 bg-transparent explore-btn"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -19,9 +21,12 @@
             探索
           </button>
 
-          <div class="desktop-dropdown-menu position-relative">
+          
+          <div class="desktop-dropdown-menu">
+           <div class="dropdown-menu dropdown-menu-level-one dropend bg-neutral-10 border-0 border-end">
+            <div class="dropdown-menu-wrapper">
             <ul
-              class="dropdown-menu-level-one list-unstyled bg-neutral-10 mb-0 border-end border-neutral-40 dropdown-menu show border-0 py-0 dropend"
+              class="list-unstyled mb-0 border-end border-neutral-40 border-0 py-0"
             >
               <li>
                 <a class="dropdown-item dropdown-item-all mb-2" href="#"
@@ -33,15 +38,18 @@
               <li>
                 <!-- 程式第一層menu -->
                 <a
-                  class="dropdown-item dropdown-toggle"
+                  class="dropdown-item dropdown-toggle active"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                   data-bs-auto-close="outside"
                   >程式</a
                 >
                 <!-- 程式第二層menu -->
+        
+              <div class="dropdown-menu dropdown-menu-level-two">
+                <div class="dropdown-menu-wrapper">
                 <ul
-                  class="dropdown-menu dropdown-menu-level-two list-unstyled border-end border-neutral-40 position-absolute"
+                  class="list-unstyled border-end border-neutral-40"
                 >
                   <li>
                     <a class="dropdown-item dropdown-item-all" href="#"
@@ -53,18 +61,20 @@
                   </li>
                   <li>
                     <a
-                      class="dropdown-item dropdown-toggle"
+                      class="dropdown-item dropdown-toggle active"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                       data-bs-auto-close="outside"
                       >網頁前端</a
                     >
                     <!-- 程式第三層menu -->
+                  <div class="dropdown-menu dropdown-menu-level-three">
+                    <div class="dropdown-menu-wrapper">
                     <ul
-                      class="dropdown-menu dropdown-menu-level-three list-unstyled px-6"
+                      class="list-unstyled px-6"
                     >
                       <div
-                        class="d-flex align-items-center pb-4 mb-4 border-bottom"
+                        class="d-flex align-items-center pb-4 mb-4 border-bottom mt-2"
                       >
                         <img
                           src="../assets/images/icons/ic_fire.png"
@@ -95,6 +105,8 @@
                       originalPrice:"3,200", studentAmount:"420", rating:"4.0",
                       ratingAmount:"333"}) -%>
                     </ul>
+                  </div>
+                  </div>
                   </li>
                   <li><a class="dropdown-item" href="#">網頁後端</a></li>
                   <li><a class="dropdown-item" href="#">網站架設</a></li>
@@ -105,6 +117,9 @@
                   <li><a class="dropdown-item" href="#">人工智慧</a></li>
                   <li><a class="dropdown-item" href="#">量化分析</a></li>
                 </ul>
+                </div>
+              </div>
+             
               </li>
 
               <li><a class="dropdown-item" href="#">藝術</a></li>
@@ -126,6 +141,9 @@
               <li><a class="dropdown-item" href="#">心靈成長</a></li>
             </ul>
           </div>
+        </div>
+          </div>
+     
 
           <!-- <ul
                 class="dropdown-menu-level-two list-unstyled border-end border-neutral-40"
@@ -272,3 +290,4 @@
     </div> -->
   </div>
 </nav>
+

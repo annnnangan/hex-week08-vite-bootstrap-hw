@@ -1,0 +1,131 @@
+.course-overview {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e7f5ff 100%);
+}
+
+.course-feature {
+  @include media-breakpoint-up(xxl) {
+    margin-top: -5%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-top: -6%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: -7%;
+  }
+
+  .feature {
+    @include media-breakpoint-up(lg) {
+      border-right: 1px solid $neutral-40;
+    }
+  }
+}
+
+.course-details-tab {
+  .nav-link {
+    color: $neutral-80;
+    font-weight: 400;
+    &.active {
+      color: $primary;
+      font-weight: 600;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $primary;
+        width: 40%;
+        height: 4px;
+        border-radius: 10px;
+        bottom: 0;
+        left: 45%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .nav-underline .nav-link {
+    border-bottom: 0px;
+  }
+}
+
+.course-content {
+  .section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: $neutral-100;
+    position: relative;
+    padding-left: 8px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    @include media-breakpoint-up(md) {
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $primary;
+      width: 3px;
+      height: 80%;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      left: 0px;
+      border-radius: 10px;
+    }
+  }
+  .overlay-cover {
+    position: absolute;
+    height: 40%;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: linear-gradient(transparent 0%, rgb(255, 255, 255) 100%);
+  }
+}
+
+.course-chapter {
+  .accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 0;
+  }
+
+  .index {
+    text-align: center;
+    margin-top: 1.5px;
+    border-radius: 4px;
+    margin-bottom: 1.5px;
+    width: 24px;
+    height: 24px;
+    background-color: $neutral-80;
+    color: $neutral-0;
+    margin-right: 8px;
+  }
+
+  .badge {
+    padding: 4px 8px;
+    background: $primary;
+    border-radius: 8px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    margin-right: 16px;
+  }
+
+  .accordion-body {
+    li {
+      cursor: pointer;
+      padding: 17px 0px;
+      color: $neutral-80;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.course-details-tab.fixed{
+  background: white;
+}

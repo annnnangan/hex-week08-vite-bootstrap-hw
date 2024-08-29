@@ -1,0 +1,21 @@
+<div class="accordion-item mb-4">
+  <h2 class="accordion-header w-100">
+    <button
+      class="accordion-button title d-flex align-items-center"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#panelsStayOpen-collapse<%= chapter %>"
+      aria-expanded="false"
+      aria-controls="panelsStayOpen-collapse<%= chapter %>"
+    >
+      <p class="index"><%= chapter %></p>
+      <p><%= chapterName %></p>
+    </button>
+  </h2>
+  <div
+    id="panelsStayOpen-collapse<%= chapter %>"
+    class="accordion-collapse collapse"
+  >
+    <div class="accordion-body"></div>
+  </div>
+</div>

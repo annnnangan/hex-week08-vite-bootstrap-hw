@@ -1,0 +1,9 @@
+<nav aria-label="breadcrumb mb-md-10 mb-6 body-text text-neutral-80">
+  <ol class="breadcrumb">
+    <% for(var i=0; i< breadcrumb.length; i++) { %>
+    <li class="breadcrumb-item">
+      <a href="<%= breadcrumb[i].link %>"> <%= breadcrumb[i].name %> </a>
+    </li>
+    <% } %>
+  </ol>
+</nav>
