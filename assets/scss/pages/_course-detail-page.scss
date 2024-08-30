@@ -2,6 +2,12 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e7f5ff 100%);
 }
 
+.desktop-course-cta{
+  &.sticky-top{
+    top:100px;
+  }
+}
+
 .course-feature {
   @include media-breakpoint-up(xxl) {
     margin-top: -5%;
