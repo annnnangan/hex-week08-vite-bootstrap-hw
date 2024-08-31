@@ -6,8 +6,8 @@ const dropDownLevelTwo = document.querySelector(".dropdown-menu-level-two")
 
 
 dropDownLevelTwoBack.addEventListener("click", (event)=>{
-  dropDownLevelTwo.classList.add("collapse");
-
+  console.log("clicked")
+  dropDownLevelTwo.classList.remove("show");
 })
 
 
