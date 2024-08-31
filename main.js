@@ -1,6 +1,7 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+
 var bannerSwiper = new Swiper(".bannerSwiper", {
   grabCursor: true,
   centeredSlides: true,
