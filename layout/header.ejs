@@ -314,7 +314,156 @@
               ></button>
             </div>
 
-            <div class="offcanvas-body py-4 px-6">
+            <div class="offcanvas-body py-4 px-6 mb-15">
+
+
+              <div class="mobile-dropdown-menu position-relative">
+                <div
+                  class="dropdown-menu-level-one dropend border-0"
+                >
+                
+                    <ul
+                      class="list-unstyled mb-0 py-0"
+                    >
+                      <li>
+                        <a class="dropdown-item dropdown-item-all mb-2" href="#"
+                          >探索全部</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="#">音樂</a></li>
+                      <li><a class="dropdown-item" href="#">攝影</a></li>
+                      <li>
+                        <!-- 程式第一層menu -->
+                        <a
+                          class="dropdown-item dropdown-toggle active"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          data-bs-auto-close="outside"
+                          >程式</a
+                        >
+                        <!-- 程式第二層menu -->
+
+                      <div class="dropdown-menu dropdown-menu-level-two position-absolute">
+                          <ul
+                            class="list-unstyled"
+                          >
+                            <li class="dropdown-item-all-wrapper">
+                              <a
+                                class="dropdown-item dropdown-item-all"
+                                href="#"
+                                >所有程式</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">程式入門</a>
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item dropdown-toggle active"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                data-bs-auto-close="outside"
+                                >網頁前端</a
+                              >
+                              <!-- 程式第三層menu -->
+                              <div
+                                class="dropdown-menu dropdown-menu-level-three"
+                              >
+                                <div class="dropdown-menu-wrapper">
+                                  <ul class="list-unstyled px-6">
+                                    <div
+                                      class="d-flex align-items-center pb-4 mb-4 border-bottom mt-2"
+                                    >
+                                      <img
+                                        src="../assets/images/icons/ic_fire.png"
+                                        alt="fire icon"
+                                        class="me-2"
+                                        width="21"
+                                        height="21"
+                                      />
+                                      <p class="subtitle">熱門網頁前端課程</p>
+                                    </div>
+
+                                    <%-
+                                    include('./layout/course-card-horizontal',{courseName:
+                                    "小白也會！從零開始學習 Python 程式設計" ,
+                                    courseImage:"course-5.png",teacherImage:"avatar-2.png",
+                                    teacherName:"Kelly Hsu",
+                                    discountPrice:"2,480",
+                                    originalPrice:"3,200", studentAmount:"420",
+                                    rating:"4.0", ratingAmount:"333"}) -%> <%-
+                                    include('./layout/course-card-horizontal',{courseName:
+                                    "小白也會！從零開始學習 Python 程式設計" ,
+                                    courseImage:"course-5.png",teacherImage:"avatar-2.png",
+                                    teacherName:"Kelly Hsu",
+                                    discountPrice:"2,480",
+                                    originalPrice:"3,200", studentAmount:"420",
+                                    rating:"4.0", ratingAmount:"333"}) -%> <%-
+                                    include('./layout/course-card-horizontal',{courseName:
+                                    "小白也會！從零開始學習 Python 程式設計" ,
+                                    courseImage:"course-5.png",teacherImage:"avatar-2.png",
+                                    teacherName:"Kelly Hsu",
+                                    discountPrice:"2,480",
+                                    originalPrice:"3,200", studentAmount:"420",
+                                    rating:"4.0", ratingAmount:"333"}) -%>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">網頁後端</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">網站架設</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">資訊安全</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">程式語言</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">遊戲開發</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">資料科學</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">人工智慧</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">量化分析</a>
+                            </li>
+                          </ul>
+                   
+                      </div>
+
+                      </li>
+  
+                      <li><a class="dropdown-item" href="#">藝術</a></li>
+                      <li><a class="dropdown-item" href="#">人文</a></li>
+                      <li><a class="dropdown-item" href="#">攝影</a></li>
+                      <li><a class="dropdown-item" href="#">行銷</a></li>
+                      <li><a class="dropdown-item" href="#">投資理財</a></li>
+                      <li><a class="dropdown-item" href="#">心靈成長</a></li>
+                      <li><a class="dropdown-item" href="#">職場技能</a></li>
+                      <li><a class="dropdown-item" href="#">生活品味</a></li>
+                      <li><a class="dropdown-item" href="#">攝影</a></li>
+                      <li><a class="dropdown-item" href="#">行銷</a></li>
+                      <li><a class="dropdown-item" href="#">投資理財</a></li>
+                      <li><a class="dropdown-item" href="#">心靈成長</a></li>
+                      <li><a class="dropdown-item" href="#">生活品味</a></li>
+                      <li><a class="dropdown-item" href="#">攝影</a></li>
+                      <li><a class="dropdown-item" href="#">行銷</a></li>
+                      <li><a class="dropdown-item" href="#">投資理財</a></li>
+                      <li><a class="dropdown-item" href="#">心靈成長</a></li>
+                    </ul>
+                  </div>
+         
+              </div>
+            </div>
+
+
               <div class="fixed-bottom">
                 <div class="py-3 px-6 border-top bg-neutral-0">
                   <a

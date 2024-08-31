@@ -475,28 +475,27 @@
       </div>
     </div>
   </div>
+  <script>
+
+
+    document.addEventListener("scroll", () => {     
+    
+      const tab = document.querySelector(".course-details-tab")
+  
+  
+      if (tab.getBoundingClientRect().top === 0) {
+        tab.classList.add("fixed")
+      } else {
+   
+        tab.classList.remove("fixed") 
+      }
+    })
+  
+    
+  
+  </script>
   <script type="module" src="../main.js"></script>
 </body>
 
-<script>
-
-
-  document.addEventListener("scroll", () => {     
-  
-    const tab = document.querySelector(".course-details-tab")
-
-
-    if (tab.getBoundingClientRect().top === 0) {
-      tab.classList.add("fixed")
-    } else {
- 
-      tab.classList.remove("fixed") 
-      tabHeader.classList.add("d-none")
-    }
- 
-  })
- 
-
-</script>
 
 </html>

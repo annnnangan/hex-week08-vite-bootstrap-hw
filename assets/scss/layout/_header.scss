@@ -115,3 +115,41 @@
     }
   }
 }
+
+.mobile-dropdown-menu{
+  .dropdown-menu-level-two .dropdown-item-all-wrapper{
+    a{
+      display: flex;
+      justify-content: center;
+      &::before{
+        position: absolute;
+        font-weight: 600;
+        color: $neutral-100;
+        left:6%;
+        border-left: 0;
+        content: "\e5e0";
+        font-family: "Material Symbols Outlined";
+
+      }
+    }
+   
+  }
+  .dropend .dropdown-menu[data-bs-popper]{
+    border: 0;
+    margin:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    right:100%;
+    &.collapse{
+      height: 0;
+      width:0;
+    }
+  }
+
+  
+
+ 
+
+
+}

@@ -1,6 +1,17 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+const dropDownLevelTwoBack = document.querySelector(".dropdown-menu-level-two .dropdown-item-all-wrapper")
+const dropDownLevelTwo = document.querySelector(".dropdown-menu-level-two")
+const dropDownLevelOne = document.querySelector(".dropdown-menu-level-one")
+
+
+dropDownLevelTwoBack.addEventListener("click", (event)=>{
+  dropDownLevelTwo.classList.add("collapse");
+
+})
+
+
 
 var bannerSwiper = new Swiper(".bannerSwiper", {
   grabCursor: true,
@@ -109,3 +120,7 @@ var mobileCardSwiper2 = new Swiper(".mobileCardSwiper2", {
     },
   },
 });
+
+
+ 
+
