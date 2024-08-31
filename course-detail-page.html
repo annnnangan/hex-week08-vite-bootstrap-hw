@@ -601,11 +601,11 @@
             </div>
             <div class="d-flex mt-auto">
               <button
-                class="bg-neutral-0 btn btn-outline-primary d-flex align-items-center material-symbols-outlined-fill py-3 px-md-4 title me-2">
+                class="bg-neutral-0 link-primary btn btn-outline-primary d-flex align-items-center material-symbols-outlined-fill py-3 px-md-4 title me-2">
                 <span class="material-symbols-outlined"> bookmark </span>收藏課程
               </button>
               <button
-                class="bg-neutral-0 btn btn-outline-neutral-80 d-flex align-items-center material-symbols-outlined-fill py-3 px-md-4 title">
+                class="bg-neutral-0 link-secondary btn btn-outline-neutral-80 d-flex align-items-center material-symbols-outlined-fill py-3 px-md-4 title">
                 <span class="material-symbols-outlined"> share </span>分享課程
               </button>
             </div>
@@ -667,6 +667,7 @@
   </div>
   <!-- Course Details Tab-->
   <div class="course-details-tab sticky-top border-bottom mb-md-8 mb-9">
+
     <div class="container">
       <ul class="nav nav-underline flex-nowrap">
         <li class="nav-item me-lg-7">
@@ -1500,21 +1501,22 @@
 
 <script>
 
+
   document.addEventListener("scroll", () => {     
   
     const tab = document.querySelector(".course-details-tab")
 
+
     if (tab.getBoundingClientRect().top === 0) {
       tab.classList.add("fixed")
     } else {
-      tab.classList.remove("fixed")
+ 
+      tab.classList.remove("fixed") 
+      tabHeader.classList.add("d-none")
     }
  
   })
-
  
-
-; // {x: 0, y: 200}
 
 </script>
 
