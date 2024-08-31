@@ -1,17 +1,23 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
-const dropDownLevelTwoBack = document.querySelector(".dropdown-menu-level-two .dropdown-item-all-wrapper")
-const dropDownLevelTwo = document.querySelector(".dropdown-menu-level-two")
+//Mobile Dropdown Menu Set up
+const dropDownLevelTwoBack = document.querySelector(".mobile-dropdown-menu .dropdown-menu-level-two .dropdown-item-all-wrapper")
+const dropDownLevelThreeBack = document.querySelector(".mobile-dropdown-menu .dropdown-menu-level-three .dropdown-item-all-wrapper")
+const dropDownLevelTwo = document.querySelector(".mobile-dropdown-menu .dropdown-menu-level-two")
+const dropDownLevelThree = document.querySelector(".mobile-dropdown-menu .dropdown-menu-level-three")
 
 
 dropDownLevelTwoBack.addEventListener("click", (event)=>{
-  console.log("clicked")
   dropDownLevelTwo.classList.remove("show");
 })
 
+dropDownLevelThreeBack.addEventListener("click", (event)=>{
+  dropDownLevelThree.classList.remove("show");
+})
 
 
+//Swiper Configuration
 var bannerSwiper = new Swiper(".bannerSwiper", {
   grabCursor: true,
   centeredSlides: true,

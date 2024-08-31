@@ -3,6 +3,7 @@
   <div
     class="container rounded-7 header-shadow bg-neutral-0 py-4 px-9 mt-md-9 mb-md-4 d-none d-md-block"
   >
+  <!------------------- Desktop ---------------->
     <div class="desktop-header d-flex justify-content-between w-100">
       <div class="align-items-center d-none d-md-flex">
         <!-- logo -->
@@ -246,6 +247,7 @@
     </div>
   </div>
 
+  <!------------------- Mobile ---------------->
   <div class="mobile-header bg-neutral-0 d-flex d-md-none w-100">
     <div class="container p-3">
       <div class="d-flex justify-content-between">
@@ -290,6 +292,7 @@
             </div>
           </div>
 
+<!------------------- Mobile: Inside Menu ---------------->
           <button
             class="navbar-toggler border-0 d-xl-none"
             type="button"
@@ -316,7 +319,7 @@
 
             <div class="offcanvas-body py-4 px-6 mb-15">
 
-
+<!------------------- Mobile: Dropdown Menu ---------------->
               <div class="mobile-dropdown-menu position-relative">
                 <div
                   class="dropdown-menu-level-one dropend border-0"
@@ -347,11 +350,11 @@
                           <ul
                             class="list-unstyled"
                           >
-                            <li class="dropdown-item-all-wrapper">
+                            <li class="dropdown-item-all-wrapper border-bottom mb-5">
                               <a
                                 class="dropdown-item dropdown-item-all"
                                 href="#"
-                                >所有程式</a
+                                >所有課程</a
                               >
                             </li>
                             <li>
@@ -369,8 +372,15 @@
                               <div
                                 class="dropdown-menu dropdown-menu-level-three"
                               >
-                                <div class="dropdown-menu-wrapper">
-                                  <ul class="list-unstyled px-6">
+                                <div class="dropdown-menu-wrapper ">
+                                  <div class="dropdown-item-all-wrapper border-bottom mb-5">
+                                    <a
+                                      class="dropdown-item dropdown-item-all"
+                                      href="#"
+                                      >所有程式</a
+                                    >
+                                  </div>
+
                                     <div
                                       class="d-flex align-items-center pb-4 mb-4 border-bottom mt-2"
                                     >
@@ -383,7 +393,7 @@
                                       />
                                       <p class="subtitle">熱門網頁前端課程</p>
                                     </div>
-
+                                    <ul class="list-unstyled px-6">
                                     <%-
                                     include('./layout/course-card-horizontal',{courseName:
                                     "小白也會！從零開始學習 Python 程式設計" ,
