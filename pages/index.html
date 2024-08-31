@@ -12,9 +12,9 @@
     />
     <!-- Swiper -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   </head>
 
   <body>
@@ -203,6 +203,97 @@
               </a>
             </div>
           </div>
+           <!-- Slider 5 -->
+           <div class="swiper-slide">
+            <div class="position-relative swiper-content">
+              <a href="#">
+                <img
+                  src="../assets/images/deco/flower-4.png"
+                  class="position-absolute deco"
+                  alt=""
+                />
+
+                <img
+                  src="../assets/images/hero-2.png"
+                  alt=""
+                  class="banner-image rounded-md-6"
+                />
+
+                <div class="position-absolute course-highlight">
+                  <h6
+                    class="slide-up-hover d-flex align-items-center fw-semibold bg-neutral-0 rounded-pill p-xl-4 p-md-2 p-2 mb-xl-10 mb-md-8 mb-10 ms-xl-9 ms-md-7 mx-4 fs-xl-6 fs-subtitle"
+                  >
+                    <span
+                      class="badge bg-primary-10 text-primary me-2 py-2 ps-3 pe-4 rounded-7"
+                      >熱銷課程 🔥</span
+                    >
+                    給成人的鋼琴入門課，一小時教你彈奏上手！
+                  </h6>
+
+                  <div
+                    class="py-xl-7 py-md-5 ps-xl-15 ps-md-11 pe-xl-13 pe-md-7 bg-primary rounded-top-right-7 d-none d-md-block"
+                  >
+                    <h2
+                      class="text-neutral-0 fs-xl-2 fs-md-5 d-flex justify-content-center slide-right-hover"
+                    >
+                      探索感興趣的課程，今天立即上課
+                      <span
+                        class="material-symbols-outlined fs-xl-2 fs-md-5 ms-4"
+                      >
+                        arrow_right_alt
+                      </span>
+                    </h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Slider 6 -->
+          <div class="swiper-slide">
+            <div class="position-relative swiper-content">
+              <a href="#">
+                <img
+                  src="../assets/images/deco/flower-4.png"
+                  class="position-absolute deco"
+                  alt=""
+                />
+
+                <img
+                  src="../assets/images/hero-3.png"
+                  alt=""
+                  class="banner-image rounded-md-6"
+                />
+
+                <div class="position-absolute course-highlight">
+                  <h6
+                    class="slide-up-hover d-flex align-items-center fw-semibold bg-neutral-0 rounded-pill p-xl-4 p-md-2 p-2 mb-xl-10 mb-md-8 mb-10 ms-xl-9 ms-md-7 mx-4 fs-xl-6 fs-subtitle"
+                  >
+                    <span
+                      class="badge bg-primary-10 text-primary me-2 py-2 px-3 rounded-7"
+                      >熱銷課程 🔥</span
+                    >
+                    給成人的鋼琴入門課，一小時教你彈奏上手！
+                  </h6>
+
+                  <div
+                    class="py-xl-7 py-md-5 ps-xl-15 ps-md-11 pe-xl-13 pe-md-7 bg-primary rounded-top-right-7 d-none d-md-block"
+                  >
+                    <h2
+                      class="text-neutral-0 fs-xl-2 fs-md-5 d-flex justify-content-center slide-right-hover"
+                    >
+                      探索感興趣的課程，今天立即上課
+                      <span
+                        class="material-symbols-outlined fs-xl-2 fs-md-5 ms-4"
+                      >
+                        arrow_right_alt
+                      </span>
+                    </h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
         </div>
         <div class="swiper-pagination d-block d-md-none"></div>
 
@@ -586,10 +677,6 @@
 
     <%- include('./layout/footer'); -%>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script type="module" src="../main.js"></script>
 
     <script>
       const dropdownLevelOne = document.querySelector(".explore-btn")
@@ -602,5 +689,11 @@
         overlayContainer.classList.remove("overlay")
       })
     </script>
+
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+      <script type="module" src="../main.js"></script>
   </body>
 </html>

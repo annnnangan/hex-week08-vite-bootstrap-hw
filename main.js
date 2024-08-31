@@ -3,7 +3,6 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 const dropDownLevelTwoBack = document.querySelector(".dropdown-menu-level-two .dropdown-item-all-wrapper")
 const dropDownLevelTwo = document.querySelector(".dropdown-menu-level-two")
-const dropDownLevelOne = document.querySelector(".dropdown-menu-level-one")
 
 
 dropDownLevelTwoBack.addEventListener("click", (event)=>{
@@ -99,9 +98,9 @@ var mobileCardSwiper2 = new Swiper(".mobileCardSwiper2", {
     clickable: true,
     type: "bullets",
   },
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
 
   breakpoints: {
     // when window width is >= 768px
