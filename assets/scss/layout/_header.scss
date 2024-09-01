@@ -60,7 +60,7 @@
 }
 
 .desktop-dropdown-menu {
-  left: -50%;
+  left: -200%;
   bottom: -150%;
   position: absolute;
   z-index: 20000;
@@ -147,9 +147,11 @@
     }
   }
 
-  
+}
 
- 
-
-
+.hide-small-screen{
+  display:flex;
+  @media (max-width: 350px) {
+      display: none;
+   }
 }
