@@ -200,87 +200,25 @@
             </div>
             <!-- accordion -->
             <div class="accordion" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item mb-4">
-                <h2 class="accordion-header w-100">
-                  <button class="accordion-button title d-flex align-items-center" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne">
-                    <p class="index">1</p>
-                    <p>課前說明</p>
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                  <div class="accordion-body">
-                    <ul class="list-unstyled">
-                      <li>
-                        <div class="d-flex">
-                          <span class="material-symbols-outlined"> videocam </span>
-                          <p class="ms-3">課程說明</p>
-                        </div>
-                        <div class="d-flex">
-                          <div class="badge">試看單元</div>
-                          <p>00:10</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="d-flex">
-                          <span class="material-symbols-outlined"> videocam </span>
-                          <p class="ms-3">課程最終任務說明</p>
-                        </div>
-                        <div class="d-flex">
-                          <p>00:10</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="d-flex">
-                          <span class="material-symbols-outlined"> videocam </span>
-                          <p class="ms-3">課程說明</p>
-                        </div>
-                        <div class="d-flex">
-                          <p>00:10</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="d-flex">
-                          <span class="material-symbols-outlined"> videocam </span>
-                          <p class="ms-3">Hahow 學生如何在六角平台檢視問題</p>
-                        </div>
-                        <div class="d-flex">
-                          <p>00:10</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="d-flex">
-                          <span class="material-symbols-outlined">
-                            import_contacts
-                          </span>
-                          <p class="ms-3">課業作業</p>
-                        </div>
-                        <div class="d-flex">
-                          <p>00:10</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <%- include('./layout/course-chapter-list', {chapterName:"2020 VS Code網頁編輯器、HTML 基礎教學", chapter:"2"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"2020 CSS 常用語法", chapter:"3"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"2020 使用 CSS 變更 HTML 標籤特性", chapter:"4"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"Flex 網頁排版技巧", chapter:"5"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"Flex 精神時光屋", chapter:"6"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"章節說明", chapter:"7"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"網頁排版技巧 Part II", chapter:"8"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"表格與表單設計技巧", chapter:"10"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"CSS3 技巧", chapter:"11"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"最後，讓你的網頁變得更專業", chapter:"12"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"開發多頁式網站實戰講解", chapter:"13"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"接下來，你還可以學什麼？", chapter:"14"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"網頁編輯器、HTML 基礎教學（舊章節）", chapter:"15"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"CSS 常用語法（舊章節）", chapter:"16"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"2020 使用 CSS 變更 HTML 標籤特性）", chapter:"17"}) -%>
-              <%- include('./layout/course-chapter-list', {chapterName:"網頁排版技巧 Part I（舊章節）", chapter:"18"}) -%>
+             
+              <%- include('./layout/course-chapter-list', {chapterName:"課前說明", chapter:"1", isShow: true, totalLessons: "4", totalDuration: "少於 1 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"2020 VS Code網頁編輯器、HTML 基礎教學", chapter:"2", isShow: false, totalLessons: "15", totalDuration: "25 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"2020 CSS 常用語法", chapter:"3", isShow: false, totalLessons: "9", totalDuration: "37 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"2020 使用 CSS 變更 HTML 標籤特性", chapter:"4", isShow: false, totalLessons: "9", totalDuration: "37 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"Flex 網頁排版技巧", chapter:"5", isShow: false, totalLessons: "13", totalDuration: "26 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"Flex 精神時光屋", chapter:"6", isShow: false, totalLessons: "8", totalDuration: "1 小時 15 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"章節說明", chapter:"7", isShow: false, totalLessons: "1", totalDuration: "少於 1 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"網頁排版技巧 Part II", chapter:"8", isShow: false, totalLessons: "7", totalDuration: "24 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"切圖技巧", chapter:"9", isShow: false, totalLessons: "12", totalDuration: "35 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"表格與表單設計技巧", chapter:"10", isShow: false, totalLessons: "10", totalDuration: "30 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"CSS3 技巧", chapter:"11", isShow: false , totalLessons: "5", totalDuration: "23 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"最後，讓你的網頁變得更專業", chapter:"12", isShow: false, totalLessons: "10", totalDuration: "少於 18 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"開發多頁式網站實戰講解", chapter:"13", isShow: false , totalLessons: "6", totalDuration: "8 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"接下來，你還可以學什麼？", chapter:"14", isShow: false, totalLessons: "3", totalDuration: "少於 1 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"網頁編輯器、HTML 基礎教學（舊章節）", chapter:"15", isShow: false, totalLessons: "4", totalDuration: "1 小時 12 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"CSS 常用語法（舊章節）", chapter:"16", isShow: false, totalLessons: "4", totalDuration: "16 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"2020 使用 CSS 變更 HTML 標籤特性）", chapter:"17", isShow: false, totalLessons: "8", totalDuration: "12 分鐘"}) -%>
+              <%- include('./layout/course-chapter-list', {chapterName:"網頁排版技巧 Part I（舊章節）", chapter:"18", isShow: false, totalLessons: "7", totalDuration: "7 分鐘"}) -%>
             </div>
           </div>
         </div>
