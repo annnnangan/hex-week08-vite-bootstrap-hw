@@ -15,20 +15,21 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
-    <script type="module" crossorigin src="/hex-week08-vite-bootstrap-hw/assets/main-e6a8e1a6.js"></script>
-    <link rel="stylesheet" href="/hex-week08-vite-bootstrap-hw/assets/main-03e821df.css">
+    <script type="module" crossorigin src="/hex-week08-vite-bootstrap-hw/assets/main-8a4b92c1.js"></script>
+    <link rel="stylesheet" href="/hex-week08-vite-bootstrap-hw/assets/main-cf259539.css">
   </head>
 
   <body>
     
     <div class="overlay-cover"></div>
-<nav class="navbar navbar-expand-md position-relative py-0">
+<nav class="navbar navbar-expand-lg position-relative py-0">
+   <!------------------- Desktop ---------------->
   <div
-    class="container rounded-7 header-shadow bg-neutral-0 py-4 px-9 mt-md-9 mb-md-4 d-none d-md-block"
+    class="container rounded-7 header-shadow bg-neutral-0 py-4 px-9 mt-md-9 mb-md-4 d-none d-lg-block"
   >
-  <!------------------- Desktop ---------------->
+ 
     <div class="desktop-header d-flex justify-content-between w-100">
-      <div class="align-items-center d-none d-md-flex">
+      <div class="align-items-center d-none d-lg-flex">
         <!-- logo -->
         <a class="navbar-brand mr-6" href="#">
           <img
@@ -400,7 +401,7 @@
             </div>
           </div>
 
-          <span class="material-symbols-outlined d-none d-md-flex d-xl-none">
+          <span class="material-symbols-outlined d-none d-xl-none">
             search
           </span>
 
@@ -431,7 +432,7 @@
         </div>
       </div>
 
-      <div class="align-items-center justify-content-between d-none d-md-flex">
+      <div class="align-items-center justify-content-between d-none d-lg-flex">
         <div class="d-flex align-items-center">
           <div
             style="width: 48px"
@@ -474,7 +475,7 @@
   </div>
 
   <!------------------- Mobile ---------------->
-  <div class="mobile-header bg-neutral-0 d-flex d-md-none w-100">
+  <div class="mobile-header bg-neutral-0 d-flex d-lg-none w-100">
     <div class="container p-3">
       <div class="d-flex justify-content-between">
         <!-- logo -->
@@ -490,7 +491,7 @@
           <div class="d-flex align-items-center">
             <div
               style="width: 48px"
-              class="me-4 position-relative d-flex align-items-center"
+              class="me-4 position-relative align-items-center hide-small-screen"
             >
               <div class="material-symbols-outlined text-neutral-80">
                 notifications
@@ -504,7 +505,7 @@
 
             <div
               style="width: 48px"
-              class="me-4 position-relative d-flex align-items-center"
+              class="me-4 position-relative align-items-center hide-small-screen"
             >
               <div class="material-symbols-outlined text-neutral-80">
                 shopping_cart
@@ -520,7 +521,7 @@
 
 <!------------------- Mobile: Inside Menu ---------------->
           <button
-            class="navbar-toggler border-0 d-xl-none"
+            class="navbar-toggler border-0 d-lg-none"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
