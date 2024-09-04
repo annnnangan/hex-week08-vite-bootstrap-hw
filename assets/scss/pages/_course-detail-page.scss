@@ -2,9 +2,9 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e7f5ff 100%);
 }
 
-.desktop-course-cta{
-  &.sticky-top{
-    top:100px;
+.desktop-course-cta {
+  &.sticky-top {
+    top: 100px;
   }
 }
 
@@ -99,14 +99,16 @@
 
   .index {
     text-align: center;
-    margin-top: 1.5px;
     border-radius: 4px;
-    margin-bottom: 1.5px;
     width: 24px;
     height: 24px;
     background-color: $neutral-80;
     color: $neutral-0;
     margin-right: 8px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .badge {
@@ -132,6 +134,6 @@
   }
 }
 
-.course-details-tab.fixed{
+.course-details-tab.fixed {
   background: white;
 }
